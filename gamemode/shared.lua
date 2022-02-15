@@ -13,3 +13,14 @@ function GM:ContextMenuOpen()
   return false
 end
 
+  --Disabling NoClip/Tinnitus
+RunConsoleCommand("sbox_noclip", "0")
+RunConsoleCommand("dsp_off", "1")
+
+  --Realistic Fall Damage
+RunConsoleCommand("mp_falldamage", "1")
+
+  --Anti-Bunnyhopping
+RunConsoleCommand("vk_enabled", "1")
+RunConsoleCommand("vk_suppressor", "1")
+RunConsoleCommand("vk_speedlimit", "1")
