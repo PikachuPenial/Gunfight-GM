@@ -1,0 +1,7 @@
+"gunfight"
+{
+	"base"		"base"
+	"title"		"Gunfight"
+	"maps"		"^gf_"
+	"menusystem"	"1"
+}
