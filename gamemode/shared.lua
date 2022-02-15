@@ -44,7 +44,6 @@ RunConsoleCommand("mgbase_debug_vmrender", "1")
 RunConsoleCommand("mgbase_debug_wmrender", "1")
 
   --Modern Warfare Base PostFX
-
 RunConsoleCommand("mgbase_fx_blur", "0")
 RunConsoleCommand("mgbase_fx_cheap_particles", "0")
 RunConsoleCommand("mgbase_fx_cheap_reticles", "0")
@@ -57,14 +56,12 @@ RunConsoleCommand("mgbase_fx_vmfov", "1")
 RunConsoleCommand("mgbase_fx_vmfov_ads", "1")
 
   --Modern Warfare Base Player Models
-
 RunConsoleCommand("mgbase_rig", "1")
 RunConsoleCommand("mgbase_rig_skin", "0")
 RunConsoleCommand("mgbase_gloves", "1")
 RunConsoleCommand("mgbase_gloves_skin", "0")
 
   --Modern Warfare Base Hud
-
 RunConsoleCommand("mgbase_hud_firemode", "0")
 RunConsoleCommand("mgbase_hud_flashlight", "0")
 RunConsoleCommand("mgbase_hud_sights", "1")
@@ -72,18 +69,15 @@ RunConsoleCommand("mgbase_hud_xhair", "1")
 RunConsoleCommand("mgbase_hud_xhaircolor", "1")
 
   --Modern Warfare Base Mechanics
-
 RunConsoleCommand("mgbase_autoreload", "0")
 RunConsoleCommand("mgbase_manualrechamber", "1")
 RunConsoleCommand("mgbase_saveatts", "0")
 
   --Modern Warfare Base Server Multipliers
-
 RunConsoleCommand("mgbase_sv_accuracy", "1")
 RunConsoleCommand("mgbase_sv_pvedamage", "1")
 RunConsoleCommand("mgbase_sv_pvpdamage", "1")
-RunConsoleCommand("mgbase_sv_recoil", "2.5")
+RunConsoleCommand("mgbase_sv_recoil", "2")
 
   --Modern Warfare Base Setup / Allow Attachments
-
 RunConsoleCommand("mgbase_sv_customization", "1")
