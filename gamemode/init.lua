@@ -12,6 +12,12 @@ function GM:PlayerSpawn(ply)
     ply:SetWalkSpeed(175)
     ply:SetJumpPower(230)
 
+    local playerModels = {"models/kyo/ghost_azrael_pm.mdl", "models/balkandude.mdl", "models/usef.mdl"}
+    local chosenPlayerModel = playerModels[math.random(#playerModels)]
+
+    ply:SetModel(playerModels[math.random(#playerModels)])
+    print(chosenPlayerModel)
+
     ply:SetupHands()
     
     return true
