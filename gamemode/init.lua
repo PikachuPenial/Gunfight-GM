@@ -2,7 +2,11 @@ AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
 
 include("shared.lua")
+<<<<<<< Updated upstream
 include("sv_match_system.lua")
+=======
+include("concommands.lua")
+>>>>>>> Stashed changes
 
     --This section is mostly setting up integers for stats/achivments, while also setting up the player(s) stats like movement and health.
     --Set up player movement, and playermodels.
@@ -130,5 +134,5 @@ hook.Add("PlayerHurt", "playerDamage", function(victim, attacker, remainingHealt
 end)
 
 function GM:ShowSpare1(ply)
-	ply:ConCommand("gunfight_player_menu")
+	ply:ConCommand("gf_player_menu")
 end
