@@ -18,8 +18,8 @@ RunConsoleCommand("mp_falldamage", "1")
 
   --Anti-Bunnyhopping
 RunConsoleCommand("vk_enabled", "1")
-RunConsoleCommand("vk_suppressor", "1")
-RunConsoleCommand("vk_speedlimit", "1")
+RunConsoleCommand("vk_suppressor", "200")
+RunConsoleCommand("vk_speedlimit", "150")
 
   --Slide/Leaning
 RunConsoleCommand("cl_leaning_distance", "800")
@@ -71,7 +71,7 @@ RunConsoleCommand("mgbase_hud_xhaircolor", "1")
   --Modern Warfare Base Mechanics
 RunConsoleCommand("mgbase_autoreload", "0")
 RunConsoleCommand("mgbase_manualrechamber", "1")
-RunConsoleCommand("mgbase_saveatts", "0")
+RunConsoleCommand("mgbase_saveatts", "1")
 
   --Modern Warfare Base Server Multipliers
 RunConsoleCommand("mgbase_sv_accuracy", "1")
@@ -83,7 +83,7 @@ RunConsoleCommand("mgbase_sv_recoil", "1.7")
 RunConsoleCommand("mgbase_sv_customization", "1")
 
   --HUD Setup
-RunConsoleCommand("gwz_hud_deathcamera_enable", "1")
+RunConsoleCommand("gwz_hud_deathcamera_enable", "0")
 RunConsoleCommand("gwz_hud_deathcamera_mode", "1")
 RunConsoleCommand("gwz_hud_enable", "1")
 RunConsoleCommand("gwz_hud_enable_ammo", "1")
@@ -122,13 +122,28 @@ RunConsoleCommand("bsmod_kick_enabled", "0")
   --Executions Modifiers
 RunConsoleCommand("bsmod_killmove_anytime_behind", "1")
 RunConsoleCommand("bsmod_killmove_disable_defaults", "1")
-RunConsoleCommand("bsmod_killmove_enable_npcs", "1")
+RunConsoleCommand("bsmod_killmove_enable_npcs", "0")
 RunConsoleCommand("bsmod_killmove_enable_players", "1")
-RunConsoleCommand("bsmod_killmove_enable_teammates", "0")
+RunConsoleCommand("bsmod_killmove_enable_teammates", "1")
 RunConsoleCommand("bsmod_killmove_glow", "0")
 RunConsoleCommand("bsmod_killmove_minhealth", "1")
 RunConsoleCommand("bsmod_killmove_spawn_healthkit", "1")
 RunConsoleCommand("bsmod_killmove_spawn_healthvial", "1")
 RunConsoleCommand("bsmod_killmove_stun_npcs", "0")
 RunConsoleCommand("bsmod_killmove_thirdperson", "0")
-RunConsoleCommand("bsmod_killmove_time", "1")
+RunConsoleCommand("bsmod_killmove_time", "5")
+
+  --Armor Plate Setup
+RunConsoleCommand("sv_armorplates_armor", "33")
+RunConsoleCommand("sv_armorplates_maxarmor", "99")
+RunConsoleCommand("sv_armorplates_maxheld", "5")
+RunConsoleCommand("sv_armorplates_replacebattery", "0")
+RunConsoleCommand("sv_armorplates_spawnamount", "1")
+
+  --Health Regeneration Setup
+RunConsoleCommand("regen_adminonly", "0")
+RunConsoleCommand("regen_delay", "0.10")
+RunConsoleCommand("regen_enable", "1")
+RunConsoleCommand("regen_health", "1")
+RunConsoleCommand("regen_hurtdelay", "6")
+RunConsoleCommand("regen_maxhealth", "75")
