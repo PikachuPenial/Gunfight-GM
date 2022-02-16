@@ -18,8 +18,8 @@ RunConsoleCommand("mp_falldamage", "1")
 
   --Anti-Bunnyhopping
 RunConsoleCommand("vk_enabled", "1")
-RunConsoleCommand("vk_suppressor", "1")
-RunConsoleCommand("vk_speedlimit", "1")
+RunConsoleCommand("vk_suppressor", "200")
+RunConsoleCommand("vk_speedlimit", "150")
 
   --Slide/Leaning
 RunConsoleCommand("cl_leaning_distance", "800")
@@ -132,3 +132,18 @@ RunConsoleCommand("bsmod_killmove_spawn_healthvial", "1")
 RunConsoleCommand("bsmod_killmove_stun_npcs", "0")
 RunConsoleCommand("bsmod_killmove_thirdperson", "0")
 RunConsoleCommand("bsmod_killmove_time", "5")
+
+  --Armor Plate Setup
+RunConsoleCommand("sv_armorplates_armor", "33")
+RunConsoleCommand("sv_armorplates_maxarmor", "99")
+RunConsoleCommand("sv_armorplates_maxheld", "5")
+RunConsoleCommand("sv_armorplates_replacebattery", "0")
+RunConsoleCommand("sv_armorplates_spawnamount", "1")
+
+  --Health Regeneration Setup
+RunConsoleCommand("regen_adminonly", "0")
+RunConsoleCommand("regen_delay", "0.10")
+RunConsoleCommand("regen_enable", "1")
+RunConsoleCommand("regen_health", "1")
+RunConsoleCommand("regen_hurtdelay", "6")
+RunConsoleCommand("regen_maxhealth", "75")
