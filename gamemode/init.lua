@@ -1,5 +1,7 @@
 AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
+AddCSLuaFile("lobbyhud.lua")
+AddCSLuaFile("gamehud.lua")
 
 include("shared.lua")
 include("concommands.lua")
