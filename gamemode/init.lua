@@ -2,11 +2,8 @@ AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
 
 include("shared.lua")
-<<<<<<< Updated upstream
-include("sv_match_system.lua")
-=======
 include("concommands.lua")
->>>>>>> Stashed changes
+include("sv_match_system.lua")
 
     --This section is mostly setting up integers for stats/achivments, while also setting up the player(s) stats like movement and health.
     --Set up player movement, and playermodels.
