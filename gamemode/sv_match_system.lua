@@ -9,34 +9,71 @@ local playerTwo
 local spawnOne
 local spawnTwo
 
-function SpawnPlayers()
+function EndBuyTime(plyTable)
 
-    local spawns = ents.FindByName( "gf_match_spawns" )
+    print("Ending Buy Time!")
+
+    for _, ply in ipairs( plyTable ) do
+
+        ply:UnLock()
+
+    end
+
+end
+
+function StartBuyTime(plyTable)
+
+    print("Starting Buy Time!")
+
+    for _, ply in ipairs( plyTable ) do
+
+        ply:Lock()
+
+    end
+
+    timer.Simple( 20, function() EndBuyTime(plyTable) end )
+
+end
+
+function SpawnPlayers(map)
+
+    local spawns = ents.FindByName( "gf_match_spawns_"..map )
     local players = player.GetHumans()
-    
-    playerOne = players[1]
-    playerTwo = players[2]
-    
-    spawnOne = spawns[1]
-    spawnTwo = spawns[2]
 
-    playerOne:SetPos(spawnOne:GetPos())
-	playerOne:SetAngles(spawnOne:GetAngles())
+    if #players == 1 then
 
-    playerTwo:SetPos(spawnTwo:GetPos())
-	playerTwo:SetAngles(spawnTwo:GetAngles())
+        playerOne = players[1]
+        
+        spawnOne = spawns[1]
+
+        playerOne:SetPos(spawnOne:GetPos())
+        playerOne:SetEyeAngles(spawnOne:GetAngles())
+
+    else
+
+        playerOne = players[1]
+        playerTwo = players[2]
+        
+        spawnOne = spawns[1]
+        spawnTwo = spawns[2]
+
+        playerOne:SetPos(spawnOne:GetPos())
+        playerOne:SetEyeAngles(spawnOne:GetAngles())
+
+        playerTwo:SetPos(spawnTwo:GetPos())
+        playerTwo:SetEyeAngles(spawnTwo:GetAngles())
+
+    end
+    
+    StartBuyTime(players)
 
 end
 
 function StartMatch(ply, cmd, args)
 
-    roundNumber = args[1]
-    roundTime = args[2]
-    roundMap = args[3]
+    roundMap = args[1]
 
-    SpawnPlayers()
-
-    print("starting round")
+    SpawnPlayers(roundMap)
 
 end
 concommand.Add("gf_start_match", StartMatch)
