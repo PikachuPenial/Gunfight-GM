@@ -1,0 +1,462 @@
+
+
+
+materialPath: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\materials
+Loading C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\gamemodes\gunfight\content\gf_dev.vmf
+Material not found!: BUILDING_TEMPLATE/METALWALL004EZ
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\gamemodes\gunfight\content\gf_dev.prt...Building visibility clusters...
+done (0)
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+*** Error: Skybox vtf files for skybox/sky_day01_01 weren't compiled with the same size texture and/or same flags!
+Can't load skybox file skybox/sky_day01_01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (26761 bytes)
+WARNING! model "models/props_vehicles/longnose_truck.mdl" has mismatching model version (49, expected 48)! Expect problems.
+WARNING! model "models/props_vehicles/longnose_truck_glass.mdl" has mismatching model version (49, expected 48)! Expect problems.
+WARNING! model "models/props_vehicles/car004b.mdl" has mismatching model version (49, expected 48)! Expect problems.
+WARNING! model "models/props_vehicles/car003a.mdl" has mismatching model version (49, expected 48)! Expect problems.
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 66 texinfos to 55
+Reduced 13 texdatas to 13 (316 bytes to 316)
+Writing C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+0 seconds elapsed
+
+
+
+12 threads
+reading c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+reading c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.prt
+  50 portalclusters
+  88 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1182
+Average clusters visible: 23
+Building PAS...
+Average clusters audible: 27
+visdatasize:1161  compressed from 800
+writing c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+PREP OK
+Warning! Invalid model version "models/props_vehicles/longnose_truck.mdl"
+Warning! Invalid model version "models/props_vehicles/longnose_truck_glass.mdl"
+Warning! Invalid model version "models/props_vehicles/car004b.mdl"
+Warning! Invalid model version "models/props_vehicles/car003a.mdl"
+255 faces
+147124 square feet [21185978.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+255 patches before subdivision
+9133 patches after subdivision
+7 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 576008, max 257
+transfer lists:   4.4 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(39974, 33148, 26588)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(6671, 4417, 3014)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(1533, 963, 587)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(436, 263, 142)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(140, 80, 38)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(48, 25, 10)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(17, 8, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(6, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #9 added RGB(2, 1, 0)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #10 added RGB(1, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0013 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   1/4096           48/196608   ( 0.0%) 
+brushes                 75/16384         900/196608   ( 0.5%) 
+brushsides             490/163840       3920/1310720  ( 0.3%) 
+planes                 216/65536        4320/1310720  ( 0.3%) 
+vertexes               347/65536        4164/786432   ( 0.5%) 
+nodes                  153/65536        4896/2097152  ( 0.2%) 
+texinfos                55/12288        3960/884736   ( 0.4%) 
+texdata                 13/2048          416/65536    ( 0.6%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  255/65536       14280/3670016  ( 0.4%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces              117/65536        6552/3670016  ( 0.2%) 
+leaves                 155/65536        4960/2097152  ( 0.2%) 
+leaffaces              290/65536         580/131072   ( 0.4%) 
+leafbrushes            151/65536         302/131072   ( 0.2%) 
+areas                    4/1024           32/8192     ( 0.4%) 
+surfedges             1638/512000       6552/2048000  ( 0.3%) 
+edges                  931/256000       3724/1024000  ( 0.4%) 
+LDR worldlights          7/8192          616/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              6/32768          60/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           105/65536         210/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/1024            0/360448   ( 0.0%) 
+LDR lightdata         [variable]      244020/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]        1161/16777216 ( 0.0%) 
+entdata               [variable]        3190/393216   ( 0.8%) 
+LDR ambient table      155/65536         620/262144   ( 0.2%) 
+HDR ambient table      155/65536         620/262144   ( 0.2%) 
+LDR leaf ambient       582/65536       16296/1835008  ( 0.9%) 
+HDR leaf ambient       155/65536        4340/1835008  ( 0.2%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/1902     ( 0.1%) 
+pakfile               [variable]       24868/0        ( 0.0%) 
+physics               [variable]       26761/4194304  ( 0.6%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 662
+Writing c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+3 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+PREP OK
+Warning! Invalid model version "models/props_vehicles/longnose_truck.mdl"
+Warning! Invalid model version "models/props_vehicles/longnose_truck_glass.mdl"
+Warning! Invalid model version "models/props_vehicles/car004b.mdl"
+Warning! Invalid model version "models/props_vehicles/car003a.mdl"
+255 faces
+147124 square feet [21185978.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+255 patches before subdivision
+9133 patches after subdivision
+7 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 576008, max 257
+transfer lists:   4.4 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(37544, 32019, 26120)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(6369, 4309, 2975)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(1497, 955, 585)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(431, 262, 142)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(140, 80, 38)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(48, 25, 10)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(17, 8, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(6, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #9 added RGB(2, 1, 0)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #10 added RGB(1, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0017 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   1/4096           48/196608   ( 0.0%) 
+brushes                 75/16384         900/196608   ( 0.5%) 
+brushsides             490/163840       3920/1310720  ( 0.3%) 
+planes                 216/65536        4320/1310720  ( 0.3%) 
+vertexes               347/65536        4164/786432   ( 0.5%) 
+nodes                  153/65536        4896/2097152  ( 0.2%) 
+texinfos                55/12288        3960/884736   ( 0.4%) 
+texdata                 13/2048          416/65536    ( 0.6%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  255/65536       14280/3670016  ( 0.4%) 
+hdr faces              255/65536       14280/3670016  ( 0.4%) 
+origfaces              117/65536        6552/3670016  ( 0.2%) 
+leaves                 155/65536        4960/2097152  ( 0.2%) 
+leaffaces              290/65536         580/131072   ( 0.4%) 
+leafbrushes            151/65536         302/131072   ( 0.2%) 
+areas                    4/1024           32/8192     ( 0.4%) 
+surfedges             1638/512000       6552/2048000  ( 0.3%) 
+edges                  931/256000       3724/1024000  ( 0.4%) 
+LDR worldlights          7/8192          616/720896   ( 0.1%) 
+HDR worldlights          7/8192          616/720896   ( 0.1%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              6/32768          60/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           105/65536         210/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/1024            0/360448   ( 0.0%) 
+LDR lightdata         [variable]      244020/0        ( 0.0%) 
+HDR lightdata         [variable]      244020/0        ( 0.0%) 
+visdata               [variable]        1161/16777216 ( 0.0%) 
+entdata               [variable]        3190/393216   ( 0.8%) 
+LDR ambient table      155/65536         620/262144   ( 0.2%) 
+HDR ambient table      155/65536         620/262144   ( 0.2%) 
+LDR leaf ambient       582/65536       16296/1835008  ( 0.9%) 
+HDR leaf ambient       581/65536       16268/1835008  ( 0.9%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/1902     ( 0.1%) 
+pakfile               [variable]       24868/0        ( 0.0%) 
+physics               [variable]       26761/4194304  ( 0.6%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 662
+Writing c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+3 seconds elapsed
+
+
+
+materialPath: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\materials
+Loading C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\gamemodes\gunfight\content\gf_dev.vmf
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\gamemodes\gunfight\content\gf_dev.prt...Building visibility clusters...
+done (0)
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+*** Error: Skybox vtf files for skybox/sky_day01_01 weren't compiled with the same size texture and/or same flags!
+Can't load skybox file skybox/sky_day01_01 to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (26759 bytes)
+WARNING! model "models/props_vehicles/longnose_truck.mdl" has mismatching model version (49, expected 48)! Expect problems.
+WARNING! model "models/props_vehicles/longnose_truck_glass.mdl" has mismatching model version (49, expected 48)! Expect problems.
+WARNING! model "models/props_vehicles/car004b.mdl" has mismatching model version (49, expected 48)! Expect problems.
+WARNING! model "models/props_vehicles/car003a.mdl" has mismatching model version (49, expected 48)! Expect problems.
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 68 texinfos to 57
+Reduced 14 texdatas to 14 (342 bytes to 342)
+Writing C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+0 seconds elapsed
+
+
+
+12 threads
+reading c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+reading c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.prt
+  50 portalclusters
+  88 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 1182
+Average clusters visible: 23
+Building PAS...
+Average clusters audible: 27
+visdatasize:1161  compressed from 800
+writing c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+PREP OK
+Warning! Invalid model version "models/props_vehicles/longnose_truck.mdl"
+Warning! Invalid model version "models/props_vehicles/longnose_truck_glass.mdl"
+Warning! Invalid model version "models/props_vehicles/car004b.mdl"
+Warning! Invalid model version "models/props_vehicles/car003a.mdl"
+259 faces
+147124 square feet [21185978.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+259 patches before subdivision
+9689 patches after subdivision
+7 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 658505, max 257
+transfer lists:   5.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(50290, 40353, 31826)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(8370, 5333, 3554)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(1805, 1074, 640)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(483, 279, 148)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(149, 82, 39)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(50, 26, 10)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(17, 8, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(6, 3, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #9 added RGB(2, 1, 0)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #10 added RGB(1, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0016 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   1/4096           48/196608   ( 0.0%) 
+brushes                 75/16384         900/196608   ( 0.5%) 
+brushsides             490/163840       3920/1310720  ( 0.3%) 
+planes                 216/65536        4320/1310720  ( 0.3%) 
+vertexes               353/65536        4236/786432   ( 0.5%) 
+nodes                  153/65536        4896/2097152  ( 0.2%) 
+texinfos                57/12288        4104/884736   ( 0.5%) 
+texdata                 14/2048          448/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  259/65536       14504/3670016  ( 0.4%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces              117/65536        6552/3670016  ( 0.2%) 
+leaves                 155/65536        4960/2097152  ( 0.2%) 
+leaffaces              294/65536         588/131072   ( 0.4%) 
+leafbrushes            151/65536         302/131072   ( 0.2%) 
+areas                    4/1024           32/8192     ( 0.4%) 
+surfedges             1658/512000       6632/2048000  ( 0.3%) 
+edges                  941/256000       3764/1024000  ( 0.4%) 
+LDR worldlights          7/8192          616/720896   ( 0.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              6/32768          60/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           105/65536         210/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/1024            0/360448   ( 0.0%) 
+LDR lightdata         [variable]      275892/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]        1161/16777216 ( 0.0%) 
+entdata               [variable]        3190/393216   ( 0.8%) 
+LDR ambient table      155/65536         620/262144   ( 0.2%) 
+HDR ambient table      155/65536         620/262144   ( 0.2%) 
+LDR leaf ambient       582/65536       16296/1835008  ( 0.9%) 
+HDR leaf ambient       155/65536        4340/1835008  ( 0.2%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/1902     ( 0.1%) 
+pakfile               [variable]       24868/0        ( 0.0%) 
+physics               [variable]       26759/4194304  ( 0.6%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 674
+Writing c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+3 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+PREP OK
+Warning! Invalid model version "models/props_vehicles/longnose_truck.mdl"
+Warning! Invalid model version "models/props_vehicles/longnose_truck_glass.mdl"
+Warning! Invalid model version "models/props_vehicles/car004b.mdl"
+Warning! Invalid model version "models/props_vehicles/car003a.mdl"
+259 faces
+147124 square feet [21185978.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+259 patches before subdivision
+9689 patches after subdivision
+7 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 658505, max 257
+transfer lists:   5.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(46558, 38642, 31135)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(7861, 5156, 3495)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(1736, 1058, 637)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(472, 277, 148)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(148, 82, 39)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(49, 26, 10)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(17, 8, 3)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(6, 3, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #9 added RGB(2, 1, 0)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #10 added RGB(1, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0013 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   1/4096           48/196608   ( 0.0%) 
+brushes                 75/16384         900/196608   ( 0.5%) 
+brushsides             490/163840       3920/1310720  ( 0.3%) 
+planes                 216/65536        4320/1310720  ( 0.3%) 
+vertexes               353/65536        4236/786432   ( 0.5%) 
+nodes                  153/65536        4896/2097152  ( 0.2%) 
+texinfos                57/12288        4104/884736   ( 0.5%) 
+texdata                 14/2048          448/65536    ( 0.7%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                  259/65536       14504/3670016  ( 0.4%) 
+hdr faces              259/65536       14504/3670016  ( 0.4%) 
+origfaces              117/65536        6552/3670016  ( 0.2%) 
+leaves                 155/65536        4960/2097152  ( 0.2%) 
+leaffaces              294/65536         588/131072   ( 0.4%) 
+leafbrushes            151/65536         302/131072   ( 0.2%) 
+areas                    4/1024           32/8192     ( 0.4%) 
+surfedges             1658/512000       6632/2048000  ( 0.3%) 
+edges                  941/256000       3764/1024000  ( 0.4%) 
+LDR worldlights          7/8192          616/720896   ( 0.1%) 
+HDR worldlights          7/8192          616/720896   ( 0.1%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              6/32768          60/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices           105/65536         210/131072   ( 0.2%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/1024            0/360448   ( 0.0%) 
+LDR lightdata         [variable]      275892/0        ( 0.0%) 
+HDR lightdata         [variable]      275892/0        ( 0.0%) 
+visdata               [variable]        1161/16777216 ( 0.0%) 
+entdata               [variable]        3190/393216   ( 0.8%) 
+LDR ambient table      155/65536         620/262144   ( 0.2%) 
+HDR ambient table      155/65536         620/262144   ( 0.2%) 
+LDR leaf ambient       582/65536       16296/1835008  ( 0.9%) 
+HDR leaf ambient       581/65536       16268/1835008  ( 0.9%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/1902     ( 0.1%) 
+pakfile               [variable]       24868/0        ( 0.0%) 
+physics               [variable]       26759/4194304  ( 0.6%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 674
+Writing c:\program files (x86)\steam\steamapps\common\garrysmod\garrysmod\gamemodes\gunfight\content\gf_dev.bsp
+3 seconds elapsed
