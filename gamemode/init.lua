@@ -1,11 +1,14 @@
 AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
 AddCSLuaFile("lobbyhud.lua")
-AddCSLuaFile("gamehud.lua")
 
 include("shared.lua")
 include("concommands.lua")
 include("sv_match_system.lua")
+
+	--Checks if gamemenu is closed.
+
+local GameMenuOpen = false
 
     --This section is mostly setting up integers for stats/achivments, while also setting up the player(s) stats like movement and health.
     --Set up player movement, and playermodels.
@@ -133,5 +136,9 @@ hook.Add("PlayerHurt", "playerDamage", function(victim, attacker, remainingHealt
 end)
 
 function GM:ShowSpare1(ply)
-	ply:ConCommand("gf_player_menu")
+	ply:ConCommand("gf_gamemenu")
+end
+
+function GM:ShowSpare2(ply)
+	ply:ConCommand("gf_playermenu")
 end
