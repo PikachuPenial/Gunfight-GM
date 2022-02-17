@@ -1,3 +1,5 @@
 include("shared.lua")
+include("gamehud.lua")
 include("lobbyhud.lua")
 include("gamemenu.lua")
+include("playermenu.lua")
