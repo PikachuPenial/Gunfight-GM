@@ -35,8 +35,35 @@ function HUD()
 
             -- Buy Time Left
 
-      draw.SimpleText("You are currently NOT in a queue!", "DermaLarge", ScrW() / 2, ScrH() - 900, Color(255,0,0,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-      draw.SimpleText("Gunfight BETA", "CloseCaption_Bold", ScrW() - 80, ScrH() - 1065, Color(55,255,55,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+            draw.RoundedBox(0, (ScrW() / 2) - 25, 70, 50, 40, Color(60,60,60,175))
+            draw.SimpleText(timeLeft, "DermaLarge", ScrW() / 2, 90, Color(0,0,0,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+
+        end
+
+        if timerTypeInt == 2 then
+
+            -- Buy Time Text
+
+            draw.RoundedBox(0, (ScrW() / 2) - 90, 20, 180, 40, Color(60,60,60,175))
+            draw.SimpleText("ROUND TIME", "DermaLarge", ScrW() / 2, 40, Color(0,0,0,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+
+            -- Buy Time Left
+
+            draw.RoundedBox(0, (ScrW() / 2) - 50, 70, 100, 40, Color(60,60,60,175))
+            draw.SimpleText(timeLeft, "DermaLarge", ScrW() / 2, 90, Color(0,0,0,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+
+        end
+
+    end
+
+    if timerTypeInt == 0 then
+
+        --This HUD will appear when a player is in the lobby, and is not in a match.    
+        
+        draw.SimpleText("You are currently NOT in a queue!", "DermaLarge", ScrW() / 2, ScrH() - 900, Color(255,0,0,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+        draw.SimpleText("Gunfight BETA", "CloseCaption_Bold", ScrW() - 95, ScrH() - 1055, Color(55,255,55,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+
+    end
 
 end
 hook.Add("HUDPaint", "LobbyHud", HUD)
