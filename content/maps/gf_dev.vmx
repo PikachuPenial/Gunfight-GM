@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "9169"
-	"mapversion" "119"
+	"editorbuild" "9174"
+	"mapversion" "123"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "119"
+	"mapversion" "123"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -826,7 +826,7 @@ world
 		{
 			"id" "362"
 			"plane" "(-128 -128 -192) (-128 -768 -192) (-128 -768 192)"
-			"material" "BUILDING_TEMPLATE/METALWALL004EZ"
+			"material" "DE_NUKE/NUKE_METALDOOR_01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
 			"rotation" "0"
@@ -837,7 +837,7 @@ world
 		{
 			"id" "363"
 			"plane" "(-128 -128 192) (-512 -128 192) (-512 -128 -192)"
-			"material" "BUILDING_TEMPLATE/METALWALL004EZ"
+			"material" "DE_NUKE/NUKE_METALDOOR_01"
 			"uaxis" "[-1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
 			"rotation" "0"
@@ -891,7 +891,7 @@ world
 		{
 			"id" "374"
 			"plane" "(128 768 192) (128 128 192) (128 128 -192)"
-			"material" "BUILDING_TEMPLATE/METALWALL004EZ"
+			"material" "METAL/HR_METAL/HR_METAL_GRATED_C"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
 			"rotation" "0"
@@ -924,7 +924,7 @@ world
 		{
 			"id" "371"
 			"plane" "(512 128 -192) (128 128 -192) (128 128 192)"
-			"material" "BUILDING_TEMPLATE/METALWALL004EZ"
+			"material" "METAL/HR_METAL/HR_METAL_GRATED_C"
 			"uaxis" "[-1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
 			"rotation" "0"
@@ -6299,6 +6299,36 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 -15268]"
+	}
+}
+entity
+{
+	"id" "2145"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "arena_city"
+	"origin" "0 0 -192"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "2147"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "arena_desert"
+	"origin" "1536 0 -192"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
