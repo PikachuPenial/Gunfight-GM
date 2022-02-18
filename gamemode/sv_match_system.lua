@@ -1,7 +1,7 @@
-local roundNumber
-local roundTime
-local roundMap
+local roundsCompleted = 0
 
+local roundsWonPlayerOne = 0
+local roundsWonPlayerTwo = 0
 
 local playerOne
 local playerTwo
@@ -13,6 +13,8 @@ local knownTimerType
 
 util.AddNetworkString( "TimerLength" )
 util.AddNetworkString( "ActiveTimerType" )
+
+util.AddNetworkString( "UpdateScore" )
 
 function UpdateTimer(timer, type)
 
@@ -34,6 +36,24 @@ function NextRound(winner, loser)
 
     local plyTable = {winner, loser}
     table.Shuffle(plyTable)
+
+    if winner == playerOne then
+
+        roundsWonPlayerOne = roundsWonPlayerOne + 1
+
+        net.Start("UpdateScore")
+        net.WriteString(roundsWonPlayerOne .. "-" .. roundsWonPlayerTwo)
+        net.Send(playerOne)
+
+    else
+
+        roundsWonPlayerTwo = roundsWonPlayerTwo + 1
+
+        net.Start("UpdateScore")
+        net.WriteString(roundsWonPlayerTwo .. "-" .. roundsWonPlayerOne)
+        net.Send(playerTwo)
+
+    end
 
     timer.Create("NextRoundTimer", 5, 1, function ()
     
@@ -168,7 +188,47 @@ function StartMatch(ply, cmd, args)
     local timerNames = {"BuyTimer", "RoundTimer"}
     for k, v in pairs(timerNames) do if timer.Exists(v) == true then timer.Remove(v) end end
 
-    roundMap = args[1]
+    local roundMap
+
+    if args[1] == nil then
+
+        local spawns = ents.FindByClass( "info_target" )
+
+        local arenaNameTable = {}
+        local arenas = {}
+
+        for k, v in pairs(spawns) do
+
+            if string.StartWith(v:GetName(), "arena_") == true then
+
+                local spawnNameDirty = v:GetName()
+                print(spawnNameDirty)
+
+                cleanSpawnName = string.Replace(spawnNameDirty, "arena_", "")
+
+                table.insert(arenaNameTable, cleanSpawnName)
+
+            end 
+
+        end
+
+        for k, v in pairs(arenaNameTable) do
+
+            if arenas == nil then
+                table.insert(arenas, v)
+            end
+
+        end
+
+        roundMap = arenaNameTable[ math.random( #arenaNameTable ) ]
+
+    else
+
+        roundMap = args[1]
+
+    end
+
+    print("Round map is: "..roundMap)
 
     SpawnPlayers(roundMap)
 

@@ -14,6 +14,13 @@ net.Receive("ActiveTimerType", function(len, ply)
 
 end)
 
+-- Tracks score
+net.Receive("UpdateScore", function(len, ply)
+
+    timerTypeInt = net.ReadUInt(3)
+
+end)
+
 function HUD()
 
     local client = LocalPlayer()
