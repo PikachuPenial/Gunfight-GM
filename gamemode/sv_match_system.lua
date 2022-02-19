@@ -11,10 +11,27 @@ local spawnTwo
 
 local knownTimerType
 
+local doRandomWeapons
+
+local buyTime = 5
+
+local randomWeaponTable = {}
+randomWeaponTable[1] = "mg_deagle"
+randomWeaponTable[2] = "mg_mike4"
+randomWeaponTable[3] = "mg_ump45"
+randomWeaponTable[4] = "mg_oscar12"
+randomWeaponTable[5] = "mg_falima"
+
 util.AddNetworkString( "TimerLength" )
 util.AddNetworkString( "ActiveTimerType" )
 
 util.AddNetworkString( "UpdateScore" )
+
+function GetRandomWeapon()
+
+    return randomWeaponTable[ math.random(#randomWeaponTable) ]
+
+end
 
 function UpdateTimer(timer, type)
 
@@ -109,13 +126,21 @@ function StartBuyTime(plyTable)
 
     print("Starting Buy Time!")
 
+    local randomWep = GetRandomWeapon()
+
     for _, ply in ipairs( plyTable ) do
 
+        ply:StripWeapons()
+        ply:StripAmmo()
+
         ply:Lock()
+        ply:Give(randomWep)
+
+        wep = weapons.Get(randomWep)
+
+        ply:GiveAmmo(120, ply:GetWeapon(randomWep):GetPrimaryAmmoType(), true)
 
     end
-
-    local buyTime = 20
 
     local timeLeft = buyTime
 
@@ -181,6 +206,40 @@ function SpawnPlayers(map)
 
 end
 
+function DetermineRandomArena()
+
+    local spawns = ents.FindByClass( "info_target" )
+
+    local arenaNameTable = {}
+    local arenas = {}
+
+    for k, v in pairs(spawns) do
+
+        if string.StartWith(v:GetName(), "arena_") == true then
+
+            local spawnNameDirty = v:GetName()
+            print(spawnNameDirty)
+
+            cleanSpawnName = string.Replace(spawnNameDirty, "arena_", "")
+
+            table.insert(arenaNameTable, cleanSpawnName)
+
+        end 
+
+    end
+
+    for k, v in pairs(arenaNameTable) do
+
+        if arenas == nil then
+            table.insert(arenas, v)
+        end
+
+    end
+
+    return arenaNameTable[ math.random( #arenaNameTable ) ]
+
+end
+
 function StartMatch(ply, cmd, args)
 
     -- Ugly way of disabling all timers if you make a new match mid-game. For testing (:
@@ -190,41 +249,11 @@ function StartMatch(ply, cmd, args)
 
     local roundMap
 
-    if args[1] == nil then
+    if args[1] == nil then roundMap = DetermineRandomArena() else roundMap = args[1] end
 
-        local spawns = ents.FindByClass( "info_target" )
+    if args[2] == true then
 
-        local arenaNameTable = {}
-        local arenas = {}
-
-        for k, v in pairs(spawns) do
-
-            if string.StartWith(v:GetName(), "arena_") == true then
-
-                local spawnNameDirty = v:GetName()
-                print(spawnNameDirty)
-
-                cleanSpawnName = string.Replace(spawnNameDirty, "arena_", "")
-
-                table.insert(arenaNameTable, cleanSpawnName)
-
-            end 
-
-        end
-
-        for k, v in pairs(arenaNameTable) do
-
-            if arenas == nil then
-                table.insert(arenas, v)
-            end
-
-        end
-
-        roundMap = arenaNameTable[ math.random( #arenaNameTable ) ]
-
-    else
-
-        roundMap = args[1]
+        doRandomWeapons = true
 
     end
 
@@ -244,6 +273,9 @@ function EndMatch()
     spawns = ents.FindByClass( "info_player_start" )
 
     for k, ply in ipairs( player.GetHumans() ) do
+
+        ply:StripWeapons()
+        ply:StripAmmo()
 
         ply:SetPos(spawns[k]:GetPos())
         ply:UnLock()
