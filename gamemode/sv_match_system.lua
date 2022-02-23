@@ -173,6 +173,8 @@ function StartBuyTime(plyTable)
 
         ply:GiveAmmo(90, ply:GetWeapon(randomWep):GetPrimaryAmmoType(), true)
 
+        surface.PlaySound("sound/BuyTime.wav")
+
     end
 
     local timeLeft = buyTime
