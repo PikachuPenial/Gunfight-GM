@@ -13,14 +13,47 @@ local knownTimerType
 
 local doRandomWeapons
 
-local buyTime = 5
+local buyTime = 12
 
 local randomWeaponTable = {}
-randomWeaponTable[1] = "mg_deagle"
-randomWeaponTable[2] = "mg_mike4"
-randomWeaponTable[3] = "mg_ump45"
-randomWeaponTable[4] = "mg_oscar12"
-randomWeaponTable[5] = "mg_falima"
+
+    -- These are all of the current weapons, pretty big list, me likey!
+
+randomWeaponTable[1] = "mg_asm10"
+randomWeaponTable[2] = "mg_357"
+randomWeaponTable[3] = "mg_deagle"
+randomWeaponTable[4] = "mg_charlie725"
+randomWeaponTable[5] = "mg_ak12"
+randomWeaponTable[6] = "mg_akilo47"
+randomWeaponTable[7] = "mg_anovember94"
+randomWeaponTable[8] = "mg_valpha"
+randomWeaponTable[9] = "mg_galima"
+randomWeaponTable[10] = "mg_falima"
+randomWeaponTable[11] = "mg_scharlie"
+randomWeaponTable[12] = "mg_falpha"
+randomWeaponTable[13] = "mg_g36c"
+randomWeaponTable[14] = "mg_sierra552"
+randomWeaponTable[15] = "mg_ump45"
+randomWeaponTable[16] = "mg_hk416"
+randomWeaponTable[17] = "mg_aalpha12"
+randomWeaponTable[18] = "mg_rfb"
+randomWeaponTable[19] = "mg_kilo433"
+randomWeaponTable[20] = "mg_mcharlie"
+randomWeaponTable[21] = "mg_p320"
+randomWeaponTable[22] = "mg_m1911"
+randomWeaponTable[23] = "mg_mike4"
+randomWeaponTable[24] = "mg_makarov"
+randomWeaponTable[25] = "mg_dblmg"
+randomWeaponTable[26] = "mg_romeo870"
+randomWeaponTable[27] = "mg_asierra12"
+randomWeaponTable[28] = "mg_oscar12"
+randomWeaponTable[29] = "mg_dpapa12"
+randomWeaponTable[30] = "mg_tango21"
+randomWeaponTable[31] = "mg_m9"
+randomWeaponTable[32] = "mg_uspmatch"
+randomWeaponTable[33] = "mg_mike26"
+randomWeaponTable[34] = "mg_glock"
+randomWeaponTable[35] = "mg_g3a3"
 
 util.AddNetworkString( "TimerLength" )
 util.AddNetworkString( "ActiveTimerType" )
@@ -138,7 +171,7 @@ function StartBuyTime(plyTable)
 
         wep = weapons.Get(randomWep)
 
-        ply:GiveAmmo(120, ply:GetWeapon(randomWep):GetPrimaryAmmoType(), true)
+        ply:GiveAmmo(90, ply:GetWeapon(randomWep):GetPrimaryAmmoType(), true)
 
     end
 

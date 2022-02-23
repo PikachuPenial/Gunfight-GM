@@ -7,12 +7,12 @@ include("shared.lua")
 include("concommands.lua")
 include("sv_match_system.lua")
 
-	--Checks if gamemenu is closed.
+	-- Checks if gamemenu is closed.
 
 local GameMenuOpen = false
 
-    --This section is mostly setting up integers for stats/achivments, while also setting up the player(s) stats like movement and health.
-    --Set up player movement, and playermodels.
+    -- This section is mostly setting up integers for stats/achivments, while also setting up the player(s) stats like movement and health.
+    -- Set up player movement, and playermodels.
 
 function GM:PlayerSpawn(ply)
     ply:SetGravity(1.40)
@@ -32,13 +32,13 @@ function GM:PlayerSpawn(ply)
     return true
 end
 
-    --Disable Gravity Gun punt.
+    -- Disable Gravity Gun punt.
 
 function GM:GravGunPunt(player, entity)
 	return false
 end
 
-    --If the player(s) has a nil integer, set it to a actual integer/number to make LUA happy.
+    -- If the player(s) has a nil integer, set it to a actual integer/number to make LUA happy.
 
 function GM:PlayerInitialSpawn(ply)
         if(ply:GetPData("playerKills") == nil) then
@@ -78,7 +78,7 @@ function GM:PlayerInitialSpawn(ply)
 	end
 end
 
-    --Save player(s) variables when they leave the server.
+    -- Save player(s) variables when they leave the server.
 
 function GM:PlayerDisconnected(ply)
 	ply:SetPData("playerKills", ply:GetNWInt("playerKills"))
@@ -89,7 +89,7 @@ function GM:PlayerDisconnected(ply)
 	ply:SetPData("playerDistance", ply:GetNWInt("playerDistance"))
 end
 
-    --Save player(s) variables when the server shutsdown.
+    -- Save player(s) variables when the server shutsdown.
 
 function GM:ShutDown()
 	for k, v in pairs(player.GetAll()) do
@@ -102,8 +102,8 @@ function GM:ShutDown()
 	end
 end
 
-    --This section will add onto the integers that we previously set up when the player(s) join a server running "Gunfight" for the first time.
-    --Updating integers when a player is killed.
+    -- This section will add onto the integers that we previously set up when the player(s) join a server running "Gunfight" for the first time.
+    -- Updating integers when a player is killed.
 
     function GM:PlayerDeath(victim, inflictor, attacker)
         if(attacker == victim) then		

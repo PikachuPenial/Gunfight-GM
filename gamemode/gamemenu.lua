@@ -1,6 +1,6 @@
 local GameMenu
 
---Setting up the background/base of the queue menu.
+-- Setting up the background/base of the queue menu.
 
 function gameMenu()
     if (GameMenu == nil) then
@@ -33,21 +33,22 @@ function gameMenu()
 end
 concommand.Add("gf_gamemenu", gameMenu)
 
---Creating buttons to put a player into a queue.
+-- Creating buttons to put a player into a queue.
 
 function gameMenuAddButtons(GameMenu)
     local queueButton = vgui.Create("DButton")
     queueButton:SetParent(GameMenu)
-    queueButton:SetText("")
+    queueButton:SetText("Enter Queue")
     queueButton:SetSize(125, 75)
     queueButton:Center()
+    queueButton:SetConsoleCommand("gf_start_match")
     queueButton.Paint = function()
 
-        --Changing color of the button.
+        -- Changing color of the button.
         surface.SetDrawColor(150, 150, 150, 255)
         surface.DrawRect(0, 0, queueButton:GetWide(), queueButton:GetTall())
         
-        --Changing color of the buttons borders.
+        -- Changing color of the buttons borders.
         surface.SetDrawColor(100, 100, 100, 225)
         surface.DrawRect(0, 74, queueButton:GetWide(), 1)
         surface.DrawRect(124, 0, 1, queueButton:GetTall())
